@@ -52,7 +52,7 @@ let overlays = {
 // Then we add a control to the map that will allow the user to change which
 // layers are visible.
 L.control.layers(baseMaps, overlays, {
-  collapse: false
+  collapsed: false,
 }).addTo(map);
 
 // Retrieve the earthquake GeoJSON data.
