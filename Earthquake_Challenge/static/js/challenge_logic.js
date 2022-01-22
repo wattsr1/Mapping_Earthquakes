@@ -24,7 +24,7 @@ let navigationDay = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/navigat
 
 // Create the map object with center, zoom level and default layer.
 let map = L.map('map', {
-	center: [40.7, -94.5],
+	center: [0, -0],
 	zoom: 3,
 	layers: [streets]
 });
@@ -212,7 +212,7 @@ legend.onAdd = function() {
 
 
 //  // 3. Use d3.json to make a call to get our Tectonic Plate geoJSON data.
-  d3.json("GeoJSON/PB2002_boundaries.json").then(function(data) {
+  d3.json("https://raw.githubusercontent.com/fraxen/tectonicplates/master/GeoJSON/PB2002_boundaries.json").then(function(data) {
     
     L.geoJSON(data, {
       style: {
