@@ -24,7 +24,7 @@ let navigationDay = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/navigat
 
 // Create the map object with center, zoom level and default layer.
 let map = L.map('map', {
-	center: [40.7, -94.5],
+	center: [0, -0],
 	zoom: 3,
 	layers: [streets]
 });
